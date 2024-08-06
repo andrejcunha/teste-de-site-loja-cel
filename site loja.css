@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/fundo.jpg'); /* Caminho para a sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Distribui o espaço entre a logo e o título */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%; /* Faz o header ocupar toda a largura da página */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura total do header */
+}
+
+header .logo {
+    width: 540px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem padrão do <h1> */
+    font-size: 48px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #111010; /* Ajuste a cor do texto conforme necessário */
+    text-align: left; /* Alinha o texto à direita */
+    font-weight: bold;
+    font-style: italic ;
+    text-shadow: 2px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.phone-list, .phone-details {
+    margin: 0px;
+    padding: 10px;
+    border: 0px solid #a6c91b;
+    border-radius: 5px;
+    width: 45%;
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(123, 108, 155);
+    font-size: x-large;
+    text-shadow: 2px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333; /* Borda simulada ao redor do texto */
+}
+
+.phone-list h2 {
+    color: #34750b;
+    text-shadow: 3px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333; /* Borda simulada ao redor do texto */
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.phone-item {
+    display:block; /* Ajusta o item ao tamanho do texto */
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    padding: 5px 10px; /* Adiciona um pouco de espaçamento interno ao item */
+    position: relative; /* Necessário para o efeito do pseudo-elemento */
+}
+
+.phone-item:hover {
+    background-color: #3c7251; /* Cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto ao passar o mouse */
+    border-radius: 5px; /* Adiciona bordas arredondadas se desejar */
+}
+
+.phone-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+.phone-details a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2bd325;
+    color: rgb(244, 242, 242);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.phone-details a:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    color: white;
+    padding: 20px;
+    text-align: center; /* Centraliza o texto dentro do footer */
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Faz com que o footer fique no final da página */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 30px; /* Tamanho padrão para ícones */
+    height: auto;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.instagram-icon {
+    width: 60px; /* Tamanho aumentado somente para o ícone do Instagram */
+}
+
+footer p {
+    margin: 0;
+}
+.top-right-text {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #333333;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    width: 150px; /* Ajuste o tamanho do contêiner conforme necessário */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 100; /* Ajuste a largura da imagem conforme necessário */
+}
+.image-container img {
+    width: 100px; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    transform: scale(3); /* Aumenta a imagem para 150% do tamanho original */
+    transform-origin: top right; /* Define o ponto de origem da transformação */
+}
